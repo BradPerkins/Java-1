@@ -32,7 +32,10 @@ public class MainActivity extends AppCompatActivity {
     TextView aveLength;
     EditText etIndex;
 
+<<<<<<< HEAD
     //Arrays   HashSet holds only unique strings
+=======
+>>>>>>> java1-branch
     HashSet<String> dataSet = new HashSet<>();
     List<String> list = new ArrayList<String>();
 
@@ -41,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> java1-branch
     }
 
     public void saveBtn(View view) {
@@ -52,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
         etComic.requestFocusFromTouch();
 
         String etComicString = etComic.getText().toString();
+<<<<<<< HEAD
+=======
+
+>>>>>>> java1-branch
         int dataSetInt = dataSet.size();
         String dataSetTotal = String.valueOf(dataSetInt);
 
@@ -103,7 +114,10 @@ public class MainActivity extends AppCompatActivity {
             //Toast alert
             AlertDialog toastAlert = new Builder(this).create();
             toastAlert.setTitle("You Indexed: ");
+<<<<<<< HEAD
             //Fills in the toast message with string name thats called in the index
+=======
+>>>>>>> java1-branch
             toastAlert.setMessage(" " + newArray[numEntered].toString() + " ");
             toastAlert.setButton(DialogInterface.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
                 @Override
@@ -116,7 +130,11 @@ public class MainActivity extends AppCompatActivity {
             toastAlert.show();
             //etIndex.setText("");
 
+<<<<<<< HEAD
             //Resets editText
+=======
+            //Resets edit text
+>>>>>>> java1-branch
             etIndex.getText().clear();
 
         } else if(etIndexString.isEmpty()){

@@ -23,14 +23,17 @@
         android:focusableInTouchMode="true"
         android:imeOptions="actionDone"/>
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
         android:id="@+id/saveBtn"
+        android:onClick="saveBtn"
+        android:background="#e65502"
         android:layout_below="@+id/etComic"
-        android:layout_centerHorizontal="true"
-        android:onClick="saveBtn"/>
+        android:layout_alignLeft="@+id/indexBtn"
+        android:layout_alignStart="@+id/indexBtn"
+        android:layout_marginTop="46dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,16 +84,16 @@
         android:layout_alignRight="@+id/numOfItems"
         android:layout_alignEnd="@+id/numOfItems" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Index"
         android:id="@+id/indexBtn"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="35dp"
         android:nestedScrollingEnabled="false"
-        android:onClick="indexButton"/>
+        android:onClick="indexButton"
+        android:background="#e65502"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="fill_parent"
