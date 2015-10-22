@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#94b4fc">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_et"
+        android:hint="Enter Movie Title"
+        android:textAlignment="center"
+        android:layout_above="@+id/btn"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#FFFFFFFF"/>
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/list"
+        android:spinnerMode="dropdown"
+        android:background="#d0d4de"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Movie"
+        android:id="@+id/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Movie Title"
+        android:id="@+id/title_tv"
+        android:textAlignment="center"
+        android:layout_below="@+id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Year"
+        android:id="@+id/year_tv"
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/title_tv"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:indeterminate="false"
+        android:layout_below="@+id/list"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/year_tv"
+        android:layout_above="@+id/movie_et"
+        android:layout_alignEnd="@+id/movie_et"
+        android:background="#FFFFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/synopsis_tv"
+            android:textAlignment="center"
+            android:layout_below="@+id/year_tv"
+            android:layout_centerHorizontal="true"/>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
